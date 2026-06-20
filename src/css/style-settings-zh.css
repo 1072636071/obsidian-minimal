@@ -1,0 +1,1173 @@
+/* @settings
+
+name: Minimal
+id: minimal-style
+settings:
+	-
+		id: instructions
+		title.zh: 文档
+		description.zh: 使用 Minimal 主题设置插件来设置快捷键、调整功能、选择字体并选择预设配色方案。使用以下设置进行更精细的自定义。访问 https://minimal.guide 查看文档。
+	-
+		id: interface
+		title.zh: 界面颜色
+	-
+		id: base
+		title.zh: 基础颜色
+		description.zh: 定义所有背景和边框颜色，除非在更精细的设置中被覆盖
+	-
+		id: bg1
+		title.zh: 主背景
+		description.zh: 主窗口的背景颜色
+	-
+		id: bg2
+		title.zh: 次背景
+		description.zh: 左侧边栏和菜单的背景颜色
+	-
+		id: bg3
+		title.zh: 激活背景
+		description.zh: 悬停按钮和当前选中文件的背景颜色
+	-
+		id: ui1
+		title.zh: 边框颜色
+		description.zh: 用于按钮、分割线和描边元素
+	-
+		id: ui2
+		title.zh: 高亮边框颜色
+		description.zh: 悬停按钮、分割线和描边元素时使用
+	-
+		id: ui3
+		title.zh: 激活边框颜色
+		description.zh: 点击按钮和描边元素时使用
+	-
+		id: accent-color
+		title.zh: 强调色
+	-
+		id: ax1
+		title.zh: 强调色
+		description.zh: 主要用于链接
+	-
+		id: ax2
+		title.zh: 强调色（悬停）
+		description.zh: 主要用于悬停的链接
+	-
+		id: ax3
+		title.zh: 交互强调色
+		description.zh: 用于按钮、清单和开关
+	-
+		id: sp1
+		title.zh: 强调色上的文字
+		description.zh: 主要用于强调按钮上的文字
+	-
+		id: extended-palette
+		title.zh: 扩展色
+	-
+		id: color-red
+		title.zh: 红色
+		description.zh: 扩展色板颜色是进度条状态、语法高亮、彩色标题和关系图节点的默认颜色
+	-
+		id: color-orange
+		title.zh: 橙色
+	-
+		id: color-yellow
+		title.zh: 黄色
+	-
+		id: color-green
+		title.zh: 绿色
+	-
+		id: color-cyan
+		title.zh: 青色
+	-
+		id: color-blue
+		title.zh: 蓝色
+	-
+		id: color-purple
+		title.zh: 紫色
+	-
+		id: color-pink
+		title.zh: 粉色
+	-
+		id: bases
+		title.zh: 数据库
+	-
+		id: bases-toolbar-opacity
+		title.zh: 工具栏不透明度
+	-
+		id: bases-table-header-icon-display
+		title.zh: 表头图标
+		options:
+			-
+				label.zh: 可见
+			-
+				label.zh: 隐藏
+	-
+		id: bases-table-row-height
+		title.zh: 表格行高
+	-
+		id: blockquotes
+		title.zh: 引用块
+	-
+		id: blockquote-color
+		title.zh: 引用块文字颜色
+	-
+		id: blockquote-background-color
+		title.zh: 引用块背景颜色
+	-
+		id: blockquote-border-color
+		title.zh: 引用块边框颜色
+	-
+		id: blockquote-border-thickness
+		title.zh: 引用块边框粗细
+	-
+		id: blockquote-size
+		title.zh: 引用块字号
+		description.zh: 接受任何 CSS font-size 值
+	-
+		id: blockquote-font-style
+		title.zh: 引用块字体样式
+		options:
+			-
+				label.zh: 正常
+			-
+				label.zh: 斜体
+	-
+		id: callouts
+		title.zh: 标注
+	-
+		id: callouts-style
+		title.zh: 标注样式
+		options:
+			-
+				label.zh: 填充
+			-
+				label.zh: 描边
+	-
+		id: callout-blend-mode
+		title.zh: 颜色混合
+		description.zh: 混合嵌套标注的颜色
+		options:
+			-
+				label.zh: 开启
+			-
+				label.zh: 关闭
+	-
+		id: canvas
+		title.zh: 画布
+	-
+		id: canvas-dot-pattern
+		title.zh: 画布点阵图案
+		description.zh: 背景点阵图案的颜色
+	-
+		id: code-blocks
+		title.zh: 代码块
+	-
+		id: code-size
+		title.zh: 代码字号
+		description.zh: 接受任何 CSS font-size 值
+	-
+		id: minimal-code-scroll
+		title.zh: 滚动长行
+		description.zh: 关闭代码自动换行
+	-
+		id: code-background
+		title.zh: 代码背景颜色
+		description.zh: 代码块的背景
+	-
+		id: code-normal
+		title.zh: 代码文字颜色
+		description.zh: 无语法高亮时代码的颜色
+	-
+		id: syntax-highlighting
+		title.zh: 语法高亮
+	-
+		id: code-comment
+		title.zh: "语法：注释"
+		description.zh: 注释的语法高亮
+	-
+		id: code-function
+		title.zh: "语法：函数"
+		description.zh: 函数的语法高亮
+	-
+		id: code-keyword
+		title.zh: "语法：关键字"
+		description.zh: 关键字的语法高亮
+	-
+		id: code-important
+		title.zh: "语法：重要文本"
+		description.zh: 重要文本的语法高亮
+	-
+		id: code-operator
+		title.zh: "语法：运算符"
+		description.zh: 运算符的语法高亮
+	-
+		id: code-property
+		title.zh: "语法：属性"
+		description.zh: 属性的语法高亮
+	-
+		id: code-punctuation
+		title.zh: "语法：标点"
+		description.zh: 标点的语法高亮
+	-
+		id: code-string
+		title.zh: "语法：字符串"
+		description.zh: 字符串的语法高亮
+	-
+		id: code-tag
+		title.zh: "语法：标签"
+		description.zh: 标签的语法高亮
+	-
+		id: code-value
+		title.zh: "语法：值"
+		description.zh: 值的语法高亮
+	-
+		id: dataview
+		title.zh: Dataview
+	-
+		id: trim-cols
+		title.zh: 裁剪 Dataview 列
+		description.zh: 禁用表格单元格中的自动换行，并裁剪长文本
+	-
+		id: dataview-inline-lists
+		title.zh: 强制表格列表内联
+		description.zh: 使表格单元格内的列表内联显示并用逗号分隔
+	-
+		id: max-col-width
+		title.zh: Dataview 最大列宽
+		description.zh: Dataview 列的最大宽度，接受任何 CSS 宽度值
+	-
+		id: embed-blocks
+		title.zh: 嵌入与引用
+	-
+		id: embed-strict
+		title.zh: 全局使用严格嵌入样式
+		description.zh: 引用内容无缝融入文本流中。可使用 embed-strict 辅助类按文件启用
+	-
+		id: embed-hide-title
+		title.zh: 隐藏嵌入标题
+		description.zh: 隐藏被引用文件的标题（严格嵌入关闭时有效）
+	-
+		id: embed-underline
+		title.zh: 嵌入文字下划线
+		description.zh: 被引用的文字添加下划线。可使用 embed-underline 辅助类按文件启用
+	-
+		id: embed-max-height
+		title.zh: 嵌入最大高度
+		description.zh: 用于被引用文字，接受有效的 CSS 单位
+	-
+		id: embed-decoration-style
+		title.zh: 嵌入文字下划线样式
+		description.zh: 需要先启用下划线
+		options:
+			-
+				label.zh: 实线
+			-
+				label.zh: 虚线
+			-
+				label.zh: 点线
+			-
+				label.zh: 双线
+			-
+				label.zh: 波浪线
+	-
+		id: embed-decoration-color
+		title.zh: 嵌入文字下划线颜色
+		description.zh: 需要先启用下划线
+	-
+		id: embed-background
+		title.zh: 嵌入背景
+	-
+		id: graphs
+		title.zh: 关系图
+	-
+		id: graph-line
+		title.zh: 连线颜色
+		description.zh: 更改关系图颜色后需要关闭并重新打开关系图面板或重启 Obsidian
+	-
+		id: graph-node
+		title.zh: 节点颜色
+	-
+		id: graph-node-focused
+		title.zh: 激活节点颜色
+	-
+		id: graph-node-tag
+		title.zh: 标签节点颜色
+	-
+		id: graph-node-attachment
+		title.zh: 附件节点颜色
+	-
+		id: graph-node-unresolved
+		title.zh: 未解析节点颜色
+	-
+		id: headings
+		title.zh: 标题
+	-
+		id: level-1-headings
+		title.zh: 一级标题
+	-
+		id: h1-font
+		title.zh: H1 字体
+		description.zh: 系统中显示的字体名称
+	-
+		id: h1-size
+		title.zh: H1 字号
+		description.zh: 接受任何 CSS font-size 值
+	-
+		id: h1-weight
+		title.zh: H1 字重
+	-
+		id: h1-color
+		title.zh: H1 文字颜色
+	-
+		id: h1-variant
+		title.zh: H1 字体变体
+		options:
+			-
+				label.zh: 正常
+			-
+				label.zh: 小型大写
+			-
+				label.zh: 全部小型大写
+	-
+		id: h1-style
+		title.zh: H1 字体样式
+		options:
+			-
+				label.zh: 正常
+			-
+				label.zh: 斜体
+	-
+		id: h1-l
+		title.zh: H1 分割线
+		description.zh: 在标题下方添加边框
+	-
+		id: level-2-headings
+		title.zh: 二级标题
+	-
+		id: h2-font
+		title.zh: H2 字体
+		description.zh: 系统中显示的字体名称
+	-
+		id: h2-size
+		title.zh: H2 字号
+		description.zh: 接受任何 CSS font-size 值
+	-
+		id: h2-weight
+		title.zh: H2 字重
+	-
+		id: h2-color
+		title.zh: H2 文字颜色
+	-
+		id: h2-variant
+		title.zh: H2 字体变体
+		options:
+			-
+				label.zh: 正常
+			-
+				label.zh: 小型大写
+			-
+				label.zh: 全部小型大写
+	-
+		id: h2-style
+		title.zh: H2 字体样式
+		options:
+			-
+				label.zh: 正常
+			-
+				label.zh: 斜体
+	-
+		id: h2-l
+		title.zh: H2 分割线
+		description.zh: 在标题下方添加边框
+	-
+		id: level-3-headings
+		title.zh: 三级标题
+	-
+		id: h3-font
+		title.zh: H3 字体
+		description.zh: 系统中显示的字体名称
+	-
+		id: h3-size
+		title.zh: H3 字号
+		description.zh: 接受任何 CSS font-size 值
+	-
+		id: h3-weight
+		title.zh: H3 字重
+	-
+		id: h3-color
+		title.zh: H3 文字颜色
+	-
+		id: h3-variant
+		title.zh: H3 字体变体
+		options:
+			-
+				label.zh: 正常
+			-
+				label.zh: 小型大写
+			-
+				label.zh: 全部小型大写
+	-
+		id: h3-style
+		title.zh: H3 字体样式
+		options:
+			-
+				label.zh: 正常
+			-
+				label.zh: 斜体
+	-
+		id: h3-l
+		title.zh: H3 分割线
+		description.zh: 在标题下方添加边框
+	-
+		id: level-4-headings
+		title.zh: 四级标题
+	-
+		id: h4-font
+		title.zh: H4 字体
+		description.zh: 系统中显示的字体名称
+	-
+		id: h4-size
+		title.zh: H4 字号
+		description.zh: 接受任何 CSS font-size 值
+	-
+		id: h4-weight
+		title.zh: H4 字重
+	-
+		id: h4-color
+		title.zh: H4 文字颜色
+	-
+		id: h4-variant
+		title.zh: H4 字体变体
+		options:
+			-
+				label.zh: 正常
+			-
+				label.zh: 小型大写
+			-
+				label.zh: 全部小型大写
+	-
+		id: h4-style
+		title.zh: H4 字体样式
+		options:
+			-
+				label.zh: 正常
+			-
+				label.zh: 斜体
+	-
+		id: h4-l
+		title.zh: H4 分割线
+		description.zh: 在标题下方添加边框
+	-
+		id: level-5-headings
+		title.zh: 五级标题
+	-
+		id: h5-font
+		title.zh: H5 字体
+		description.zh: 系统中显示的字体名称
+	-
+		id: h5-size
+		title.zh: H5 字号
+		description.zh: 接受任何 CSS font-size 值
+	-
+		id: h5-weight
+		title.zh: H5 字重
+	-
+		id: h5-color
+		title.zh: H5 文字颜色
+	-
+		id: h5-variant
+		title.zh: H5 字体变体
+		options:
+			-
+				label.zh: 正常
+			-
+				label.zh: 小型大写
+			-
+				label.zh: 全部小型大写
+	-
+		id: h5-style
+		title.zh: H5 字体样式
+		options:
+			-
+				label.zh: 正常
+			-
+				label.zh: 斜体
+	-
+		id: h5-l
+		title.zh: H5 分割线
+		description.zh: 在标题下方添加边框
+	-
+		id: level-6-headings
+		title.zh: 六级标题
+	-
+		id: h6-font
+		title.zh: H6 字体
+		description.zh: 系统中显示的字体名称
+	-
+		id: h6-size
+		title.zh: H6 字号
+		description.zh: 接受任何 CSS font-size 值
+	-
+		id: h6-weight
+		title.zh: H6 字重
+	-
+		id: h6-color
+		title.zh: H6 文字颜色
+	-
+		id: h6-variant
+		title.zh: H6 字体变体
+		options:
+			-
+				label.zh: 正常
+			-
+				label.zh: 小型大写
+			-
+				label.zh: 全部小型大写
+	-
+		id: h6-style
+		title.zh: H6 字体样式
+		options:
+			-
+				label.zh: 正常
+			-
+				label.zh: 斜体
+	-
+		id: h6-l
+		title.zh: H6 分割线
+		description.zh: 在标题下方添加边框
+	-
+		id: icons
+		title.zh: 图标
+	-
+		id: icon-muted
+		title.zh: 图标不透明度（未激活）
+	-
+		id: icon-color
+		title.zh: 图标颜色
+	-
+		id: icon-color-hover
+		title.zh: 图标颜色（悬停）
+	-
+		id: icon-color-active
+		title.zh: 图标颜色（激活）
+	-
+		id: icon-color-focused
+		title.zh: 图标颜色（聚焦）
+	-
+		id: images
+		title.zh: 图片
+	-
+		id: image-muted
+		title.zh: 暗色模式下图片不透明度
+		description.zh: 暗色模式下图片的褪色程度。悬停图片可显示完整亮度。
+	-
+		id: image-radius
+		title.zh: 图片圆角
+		description.zh: 图片的圆角半径
+	-
+		id: image-blend-light
+		title.zh: 亮色模式下混合图片
+		description.zh: 允许图片融入配色方案背景颜色
+	-
+		id: image-grid-fit
+		title.zh: 图片网格裁剪
+		description.zh: 设置网格中图片的裁剪方式
+		options:
+			-
+				label.zh: 裁剪适应
+			-
+				label.zh: 显示完整图片
+	-
+		id: image-grid-background
+		title.zh: 图片网格背景
+		description.zh: 单元格中图片的背景，当图片未裁剪适应时很有用
+	-
+		id: indentation-guides
+		title.zh: 缩进参考线
+	-
+		id: indentation-guide-color
+		title.zh: 缩进参考线颜色
+	-
+		id: indentation-guide-color-active
+		title.zh: 缩进参考线颜色（激活）
+	-
+		id: links
+		title.zh: 链接
+	-
+		id: links-internal
+		title.zh: 内部链接
+	-
+		id: link-color
+		title.zh: 内部链接颜色
+	-
+		id: link-color-hover
+		title.zh: 内部链接颜色（悬停）
+	-
+		id: link-unresolved-opacity
+		title.zh: 未解析链接不透明度
+	-
+		id: link-unresolved-color
+		title.zh: 未解析链接颜色
+	-
+		id: link-unresolved-decoration-color
+		title.zh: 未解析链接下划线颜色
+	-
+		id: links-external
+		title.zh: 外部链接
+	-
+		id: link-external-color
+		title.zh: 外部链接颜色
+	-
+		id: link-external-color-hover
+		title.zh: 外部链接颜色（悬停）
+	-
+		id: active-line
+		title.zh: 行号
+	-
+		id: active-line-on
+		title.zh: 高亮当前行
+		description.zh: 在编辑器中为当前行添加背景色
+	-
+		id: folding-offset
+		title.zh: 行号槽偏移
+		description.zh: 用于行号槽的文件边距宽度
+	-
+		id: gutter-background
+		title.zh: 行号槽背景
+	-
+		id: line-number-color
+		title.zh: 行号颜色
+	-
+		id: line-number-color-active
+		title.zh: 激活行号颜色
+	-
+		id: active-line-bg
+		title.zh: 当前行的背景
+		description.zh: 建议使用低不透明度的颜色以避免与高亮冲突
+	-
+		id: lists
+		title.zh: 列表与任务
+	-
+		id: checkbox-color
+		title.zh: 复选框颜色
+		description.zh: 已完成任务的背景颜色
+	-
+		id: checkbox-shape
+		title.zh: 复选框形状
+		options:
+			-
+				label.zh: 圆形
+			-
+				label.zh: 方形
+	-
+		id: minimal-strike-lists
+		title.zh: 已完成任务添加删除线
+		description.zh: 为已完成任务添加删除线和灰色文字
+	-
+		id: list-spacing
+		title.zh: 列表项间距
+		description.zh: 列表项之间的垂直间距（em 单位）
+	-
+		id: list-indent
+		title.zh: 嵌套列表缩进
+		description.zh: 从左侧的水平间距（em 单位）
+	-
+		id: pdf
+		title.zh: PDF
+	-
+		id: pdf-page-style
+		title.zh: PDF 页面样式
+		description.zh: 页面周围的边框和阴影
+		options:
+			-
+				label.zh: 无缝
+			-
+				label.zh: 阴影
+	-
+		id: pdf-invert-dark
+		title.zh: 暗色模式下反转 PDF
+		description.zh: 适用于白底黑字的页面
+	-
+		id: pdf-blend-light
+		title.zh: 亮色模式下混合 PDF
+		description.zh: 允许 PDF 融入配色方案背景颜色
+	-
+		id: pdf-dark-opacity
+		title.zh: 暗色模式下 PDF 不透明度
+		description.zh: 在暗色模式下淡化 PDF 页面
+	-
+		id: progress
+		title.zh: 进度条
+	-
+		id: progress-complete
+		title.zh: 已完成进度条颜色
+		description.zh: 默认使用强调色
+	-
+		id: properties
+		title.zh: 属性
+	-
+		id: metadata-heading-off
+		title.zh: 隐藏属性标题
+		description.zh: 隐藏属性上方的"属性"标题
+	-
+		id: metadata-add-property-off
+		title.zh: 隐藏"添加属性"按钮
+		description.zh: 隐藏属性下方的"添加属性"按钮
+	-
+		id: metadata-icons-off
+		title.zh: 隐藏属性图标
+		description.zh: 隐藏属性名称旁边的图标
+	-
+		id: metadata-dividers
+		title.zh: 属性行分割线
+		description.zh: 在属性之间显示边框
+	-
+		id: metadata-label-width-multiplier
+		title.zh: 属性名宽度
+		description.zh: 属性名称的宽度
+	-
+		id: sidebars
+		title.zh: 侧边栏
+	-
+		id: sidebar-tabs-style
+		title.zh: 侧边栏标签样式
+		options:
+			-
+				label.zh: 索引圆角
+			-
+				label.zh: 索引方形
+			-
+				label.zh: 现代紧凑
+			-
+				label.zh: 现代宽版
+			-
+				label.zh: 方形
+			-
+				label.zh: 下划线
+	-
+		id: sidebar-tabs-names
+		title.zh: 侧边栏标签名称
+		options:
+			-
+				label.zh: 隐藏
+			-
+				label.zh: 可见
+			-
+				label.zh: 仅单个标签
+	-
+		id: vault-profile-display
+		title.zh: 仓库配置文件位置
+		options:
+			-
+				label.zh: 底部
+			-
+				label.zh: 顶部
+	-
+		id: hide-help
+		title.zh: 隐藏帮助按钮
+	-
+		id: hide-settings
+		title.zh: 隐藏设置按钮
+	-
+		id: mobile-left-sidebar-width
+		title.zh: 移动端左侧边栏宽度
+		description.zh: 移动端固定左侧边栏的最大宽度
+	-
+		id: mobile-right-sidebar-width
+		title.zh: 移动端右侧边栏宽度
+		description.zh: 移动端固定右侧边栏的最大宽度
+	-
+		id: ribbon
+		title.zh: 侧边操作栏
+	-
+		id: ribbon-style
+		title.zh: 侧边操作栏样式
+		description.zh: 侧边操作栏菜单的显示选项。必须在 Obsidian 外观设置中启用侧边操作栏才能使用这些选项。
+		options:
+			-
+				label.zh: 默认
+			-
+				label.zh: 展开（垂直）
+			-
+				label.zh: 悬停（垂直）
+			-
+				label.zh: 悬停（水平）
+	-
+		id: tables
+		title.zh: 表格
+	-
+		id: table-text-size
+		title.zh: 表格字号
+		description.zh: 以下所有设置全局应用于所有表格。要按笔记启用这些功能，请使用辅助类。参见文档。
+	-
+		id: table-column-min-width
+		title.zh: 最小列宽
+	-
+		id: table-column-max-width
+		title.zh: 最大列宽
+	-
+		id: maximize-tables-off
+		title.zh: 最大化表格宽度
+		description.zh: 决定表格宽度超过行宽时的行为
+		options:
+			-
+				label.zh: 适应行宽
+			-
+				label.zh: 超出行宽
+			-
+				label.zh: 始终填满
+	-
+		id: row-lines
+		title.zh: 行线
+		description.zh: 全局显示表格行之间的边框
+	-
+		id: col-lines
+		title.zh: 列线
+		description.zh: 全局显示表格列之间的边框
+	-
+		id: table-lines
+		title.zh: 单元格线
+		description.zh: 全局显示所有表格单元格周围的边框
+	-
+		id: row-alt
+		title.zh: 斑马纹行
+		description.zh: 全局在交替的表格行中显示条纹背景
+	-
+		id: col-alt
+		title.zh: 斑马纹列
+		description.zh: 全局在交替的表格列中显示条纹背景
+	-
+		id: table-tabular
+		title.zh: 等宽数字
+		description.zh: 在表格中全局使用等宽数字
+	-
+		id: table-numbers
+		title.zh: 行号
+		description.zh: 全局在表格中显示行号
+	-
+		id: table-center
+		title.zh: 居中小表格
+		description.zh: 使小表格居中显示
+	-
+		id: table-nowrap
+		title.zh: 禁用自动换行
+		description.zh: 全局关闭表格单元格中的自动换行
+	-
+		id: row-hover
+		title.zh: 高亮当前行
+		description.zh: 悬停时高亮行
+	-
+		id: table-row-background-hover
+		title.zh: 当前行的背景
+		description.zh: 悬停表格行的背景颜色
+	-
+		id: tabs
+		title.zh: 标签页
+	-
+		id: header-height
+		title.zh: 标签栏高度
+	-
+		id: tabs-style
+		title.zh: 标签页样式
+		options:
+			-
+				label.zh: 索引圆角
+			-
+				label.zh: 索引方形
+			-
+				label.zh: 现代
+			-
+				label.zh: 方形
+			-
+				label.zh: 下划线
+	-
+		id: minimal-tab-text-color
+		title.zh: 标签文字颜色
+	-
+		id: minimal-tab-text-color-active
+		title.zh: 标签文字颜色（激活）
+	-
+		id: tab-stacks
+		title.zh: 堆叠标签
+	-
+		id: tab-stacked-pane-width
+		title.zh: 堆叠宽度
+		description.zh: 堆叠标签的宽度（像素）
+	-
+		id: tab-stacked-header-width
+		title.zh: 书脊宽度
+		description.zh: 书脊的宽度（像素）
+	-
+		id: tab-stacked-spine-orientation
+		title.zh: 书脊文字方向
+		options:
+			-
+				label.zh: 顶部
+			-
+				label.zh: 顶部翻转
+			-
+				label.zh: 底部
+			-
+				label.zh: 底部翻转
+			-
+				label.zh: 居中
+			-
+				label.zh: 居中翻转
+	-
+		id: tab-stacked-spine-order
+		title.zh: 书脊元素顺序
+		options:
+			-
+				label.zh: 默认
+			-
+				label.zh: 反转
+	-
+		id: tags
+		title.zh: 标签
+	-
+		id: minimal-unstyled-tags
+		title.zh: 纯文本标签
+		description.zh: 标签将渲染为普通文本，覆盖以下设置
+	-
+		id: tag-radius
+		title.zh: 标签形状
+		options:
+			-
+				label.zh: 药丸形
+			-
+				label.zh: 圆角
+			-
+				label.zh: 方形
+	-
+		id: tag-border-width
+		title.zh: 标签边框宽度
+		options:
+			-
+				label.zh: 无
+			-
+				label.zh: 细
+			-
+				label.zh: 粗
+	-
+		id: tag-color
+		title.zh: 标签文字颜色
+	-
+		id: tag-background
+		title.zh: 标签背景颜色
+	-
+		id: tag-background-hover
+		title.zh: 标签背景颜色（悬停）
+	-
+		id: text
+		title.zh: 文字
+	-
+		id: tx1
+		title.zh: 正常文字颜色
+		description.zh: 所有元素默认使用的主要文字颜色
+	-
+		id: hl1
+		title.zh: 选中文字背景
+	-
+		id: hl2
+		title.zh: 高亮文字背景
+	-
+		id: tx2
+		title.zh: 次要文字颜色
+		description.zh: 次要文字，如侧边栏笔记标题和表头
+	-
+		id: tx3
+		title.zh: 淡色文字颜色
+		description.zh: 第三级文字，如输入占位符、空复选框和禁用状态
+	-
+		id: text-formatting
+		title.zh: Markdown 语法颜色
+		description.zh: Markdown 格式语法文字颜色
+	-
+		id: italic-color
+		title.zh: 斜体文字颜色
+	-
+		id: bold-color
+		title.zh: 粗体文字颜色
+	-
+		id: bold-modifier
+		title.zh: 粗体字重增量
+	-
+		id: p-spacing
+		title.zh: 段落间距
+		description.zh: 阅读模式中段落之间的间距（Obsidian 1.3.7+）
+	-
+		id: heading-spacing
+		title.zh: 标题间距
+		description.zh: 阅读模式中段落与标题之间的间距（Obsidian 1.3.7+）
+	-
+		id: titles
+		title.zh: 标题栏
+	-
+		id: tab-title-bar
+		title.zh: 标签标题栏
+		description.zh: 必须在外观设置中启用标签标题栏
+	-
+		id: file-header-visibility
+		title.zh: 标签标题可见性
+		description.zh: 标签标题文字的可见性
+		options:
+			-
+				label.zh: 仅悬停
+			-
+				label.zh: 隐藏
+			-
+				label.zh: 可见
+	-
+		id: file-header-font-size
+		title.zh: 标签标题字号
+		description.zh: 接受任何 CSS font-size 值
+	-
+		id: file-header-font-weight
+		title.zh: 标签标题字重
+	-
+		id: file-header-justify
+		title.zh: 标签标题对齐
+		options:
+			-
+				label.zh: 居中
+			-
+				label.zh: 左对齐
+	-
+		id: title-color
+		title.zh: 标签标题文字颜色（激活）
+	-
+		id: title-color-inactive
+		title.zh: 标签标题文字颜色（未激活）
+	-
+		id: inline-title
+		title.zh: 内联标题
+		description.zh: 必须在外观设置中启用内联标题
+	-
+		id: inline-title-font
+		title.zh: 内联标题字体
+		description.zh: 系统中显示的字体名称
+	-
+		id: inline-title-size
+		title.zh: 内联标题字号
+		description.zh: 接受任何 CSS font-size 值
+	-
+		id: inline-title-weight
+		title.zh: 内联标题字重
+	-
+		id: inline-title-color
+		title.zh: 内联标题文字颜色（激活）
+	-
+		id: translucency
+		title.zh: 半透明
+	-
+		id: workspace-background-translucent
+		title.zh: 半透明背景颜色
+	-
+		id: window-frame
+		title.zh: 窗口框架
+	-
+		id: window-title-off
+		title.zh: 隐藏窗口框架标题
+		description.zh: 隐藏自定义标题栏中的标题
+	-
+		id: frame-background
+		title.zh: 框架背景
+		description.zh: 需要彩色窗口框架
+	-
+		id: frame-icon-color
+		title.zh: 框架图标颜色
+		description.zh: 需要彩色框架
+	-
+		id: titlebar-text-color-focused
+		title.zh: 框架标题颜色（聚焦）
+		description.zh: 需要自定义标题栏
+	-
+		id: titlebar-text-color
+		title.zh: 框架标题颜色（未激活）
+		description.zh: 需要自定义标题栏
+	-
+		id: titlebar-text-weight
+		title.zh: 框架标题字重
+		description.zh: 需要自定义标题栏
+
+*/
+
+/* @settings
+
+name: Minimal Cards
+id: minimal-cards-style
+settings:
+	-
+		id: cards-min-width
+		title.zh: 卡片最小宽度
+	-
+		id: cards-max-width
+		title.zh: 卡片最大宽度
+		description.zh: 默认填充可用宽度，接受有效的 CSS 单位
+	-
+		id: cards-mobile-width
+		title.zh: 移动端卡片最小宽度
+	-
+		id: cards-padding
+		title.zh: 卡片内边距
+	-
+		id: cards-image-height
+		title.zh: 卡片最大图片高度
+	-
+		id: cards-border-width
+		title.zh: 卡片边框宽度
+	-
+		id: cards-background
+		title.zh: 卡片背景颜色
+	-
+		id: cards-background-hover (hover)
+		title.zh: 卡片背景颜色（悬停）
+
+*/
+
+/* @settings
+
+name: Minimal Advanced Settings
+id: minimal-advanced
+settings:
+	-
+		id: hide-markdown
+		title.zh: 隐藏 Markdown 语法
+		description.zh: 警告 — 这可能会令人困惑，因为字符仍然存在，只是被隐藏了。
+	-
+		id: hide-settings-desc
+		title.zh: 隐藏设置描述
+		description.zh: 按住设置名称可查看其描述。
+	-
+		id: animations
+		title.zh: 动画速度
+		options:
+			-
+				label.zh: 正常
+			-
+				label.zh: 禁用
+			-
+				label.zh: 快速
+	-
+		id: cursor
+		title.zh: 光标样式
+		description.zh: UI 元素的光标样式
+		options:
+			-
+				label.zh: 默认
+			-
+				label.zh: 手型
+			-
+				label.zh: 十字
+	-
+		id: font-ui-small
+		title.zh: 小字号
+		description.zh: 较小文字的字号（px）
+	-
+		id: font-ui-smaller
+		title.zh: 更小字号
+		description.zh: 最小文字的字号（px）
+	-
+		id: mobile-toolbar-off
+		title.zh: 禁用移动端工具栏
+		description.zh: 关闭移动端编辑器中的工具栏
+
+*/
